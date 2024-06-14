@@ -1,0 +1,82 @@
+/* src/components/Navigation.css */
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .navbar-icons-left,
+  .navbar-icons-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .navbar-icons-left {
+    left: 10px;
+  }
+  
+  .navbar-icons-right {
+    right: 10px;
+  }
+  
+  .navbar-icons-left a,
+  .navbar-icons-right a {
+    color: #333;
+    margin: 0 10px;
+  }
+  
+  /* Ensure the button stays on the left */
+  .navbar-toggle {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .nav.navbar-nav.navbar-right li a {
+    font-size: 11px; /* Adjust the font size as needed */
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-brand-container {
+      flex-direction: column;
+    }
+  
+    .navbar-icons-left {
+      left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-icons-right {
+      right: 0;
+      margin-top: 10px;
+    }
+  
+    .navbar-nav {
+      margin-top: 20px;
+    }
+  }
+  
