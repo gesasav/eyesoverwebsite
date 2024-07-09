@@ -139,6 +139,7 @@ export const Contact = (props) => {
                   loading="lazy"
                   allowFullScreen
                   src={googleMapsUrl}
+                  title="Description of embedded content"
                 ></iframe>
               </div>
             </div>
