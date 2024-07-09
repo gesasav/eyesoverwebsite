@@ -1,5 +1,4 @@
 import React from "react";
-import './navigation.css';
 
 export const Navigation = (props) => {
   return (
@@ -26,12 +25,10 @@ export const Navigation = (props) => {
               </a>
             </div>
             <a className="navbar-brand page-scroll" href="#page-top">
-              EYESOVER
+              EYESOVER <span className="brand-subtext">aesthetics</span>
             </a>
+
             <div className="navbar-icons-right">
-              <a href="#profile" className="page-scroll">
-                <i className="fas fa-user"></i>
-              </a>
               <a href="#basket" className="page-scroll">
                 <i className="fas fa-shopping-basket"></i>
               </a>
@@ -56,26 +53,26 @@ export const Navigation = (props) => {
                   Lash styles
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#services" className="page-scroll">
-                  Services
+                  Products
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#portfolio" className="page-scroll">
                   Gallery
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#testimonials" className="page-scroll">
                   Reviews
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#team" className="page-scroll">
-                  Content
+                  Lash Maps
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#contact" className="page-scroll">
                   Contact

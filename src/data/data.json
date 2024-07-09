@@ -6,23 +6,27 @@
   "Features": [
     {
       "icon": "img/Features/IMG_1506.PNG",
-      "title": "Classics",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Classic",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
       "icon": "img/Features/IMG_1507.PNG",
-      "title": "Hybrids",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Hybrid",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
       "icon": "img/Features/IMG_1508.PNG",
       "title": "Volume",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
       "icon": "img/Features/IMG_1509.PNG",
       "title": "Custom",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     }
   ],
 
@@ -171,7 +175,7 @@
     }
   ],
   "Contact": {
-    "address": "77 Mapelton crescent",
+    "address": "Enfield",
     "phone": "+44 7787142131",
     "email": "info@company.com",
     "facebook": "fb.com",

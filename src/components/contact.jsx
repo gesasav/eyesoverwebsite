@@ -12,6 +12,7 @@ export const Contact = (props) => {
   const [state, setState] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const googleMapsUrl = `https://www.google.com/maps?q=MapeltonCrescentEnfield&output=embed`;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -125,14 +126,21 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
+          <h3>Contact Info</h3>
+          <div className="address-container">
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
+                  <i className="fa fa-map-marker"></i>  Address
+                </span>{" "}
               </p>
+              <div className="map-container">
+                <iframe
+                  className="responsive-iframe"
+                  loading="lazy"
+                  allowFullScreen
+                  src={googleMapsUrl}
+                ></iframe>
+              </div>
             </div>
             <div className="contact-item">
               <p>
