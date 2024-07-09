@@ -4,7 +4,7 @@ import { fetchInstagramMedia } from "./fetchInstagramContent";
 
 export const Gallery = () => {
   const [mediaData, setMediaData] = useState(null);
-  const accessToken = "IGQWRQQkptQlg2RXdjbmFiQVcwTnp2bWNtelRTTzlyaENMOVg0SnZAXUzBiYU1GNkwxdGVZASy10RHctTkZAiYWJ5LVZAMdnNUdmRRblNOMEdxYm9nMi1qX2lkRklQT0RTbVNneXJzRm1xb21JN0JYcUlPbTZAXRUh4cFUZD";
+  const accessToken = "IGQWRQWnktaW5SM0R6YmphWDhQWEQyR3BUMlJLWnZArMHV5Ui1RU0ZAiaU43clgzdDRQZATdQaC1IRlJNR25wT1hqenJLNG9ORWkzTUNkTGhwci10ZA1k1TE1RUkNuX2tia1pTRnliY2tldEtoaUN3SG5XQzl5eldkdmMZD";
 
   useEffect(() => {
     const fetchData = async () => {
