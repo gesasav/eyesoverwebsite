@@ -20,7 +20,7 @@ export const Features = (props) => {
                 >
                   <img src={d.icon} className={d.icon} alt={d.title} />
                   <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                  {/* <p>{d.text}</p> */}
                   {hoveredIndex === i && (
                     <div className="gallery-popup">
                       <button className="close-button" onClick={() => setHoveredIndex(null)}>×</button>

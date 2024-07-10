@@ -742,6 +742,12 @@ label {
 #contact .contact-item i.fa {
   margin-right: 10px;
 }
+
+#contact .contact-item a {
+  margin-right: 10px;
+  color:  #686767;
+}
+
 #contact .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 50px;

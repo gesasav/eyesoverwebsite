@@ -4,7 +4,7 @@ import { Header } from "./components/header";
 import { Features } from "./components/lashStyles";
 import { About } from "./components/about";
 //import { Services } from "./components/products";
-import { Gallery } from "./components/gallery";
+// import { Gallery } from "./components/gallery";
 // import { Testimonials } from "./components/reviews";
 // import { Team } from "./components/lashMaps";
 import { SetmoreBookingWidget } from "./components/SetmoreBookingWidget";
@@ -31,7 +31,7 @@ const App = () => {
       <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
       {/* <Services data={landingPageData.Services} /> */}
-      <Gallery data={landingPageData.Gallery} />
+      {/* <Gallery data={landingPageData.Gallery} /> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />

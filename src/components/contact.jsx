@@ -151,23 +151,26 @@ export const Contact = (props) => {
               </div>
             </div>
             <div className="contact-item">
+            <a href={`tel:${props.data ? props.data.phone : '#'}`}>
               <p>
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
-            </div>
-            <div className="contact-item">
+            </a>
+          </div>
+          <div className="contact-item">
+            <a href={`mailto:${props.data ? props.data.email : '#'}`}>
               <p>
                 <span>
                   <i className="fa fa-envelope"></i> Email
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
-            </div>
-            <div className="contact-item">
-            </div>
+            </a>
+          </div>
+
           </div>
           <div className="col-md-12">
             <div className="row">
