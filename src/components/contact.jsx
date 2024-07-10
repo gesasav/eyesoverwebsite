@@ -51,17 +51,17 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Get In Touch</h2>
                 {!isSubmitted && !isLoading && (
-                    <p>
-                      Please fill out the form below to send us an email and we will
-                      get back to you as soon as possible.
-                    </p>
+                  <p>
+                    Please fill out the form below to send us an email and we will
+                    get back to you as soon as possible.
+                  </p>
                 )}
               </div>
               {isLoading ? (
                 <div className="loading-spinner">
-                <div className="spinner"></div>
-                <p>Loading...</p>
-              </div>
+                  <div className="spinner"></div>
+                  <p>Loading...</p>
+                </div>
               ) : (
                 <>
                   {isSubmitted ? (
@@ -69,7 +69,11 @@ export const Contact = (props) => {
                       <h3>Thanks! We will be in touch soon.</h3>
                     </div>
                   ) : (
-                    <form name="sentMessage" validate="true" onSubmit={handleSubmit}>
+                    <form
+                      name="sentMessage"
+                      validate="true"
+                      onSubmit={handleSubmit}
+                    >
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
@@ -116,7 +120,10 @@ export const Contact = (props) => {
                         <p className="help-block text-danger"></p>
                       </div>
                       <div id="success"></div>
-                      <button type="submit" className="btn btn-custom btn-lg">
+                      <button
+                        type="submit"
+                        className="btn btn-custom btn-lg"
+                      >
                         Send Message
                       </button>
                     </form>
@@ -126,11 +133,11 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
-          <h3>Contact Info</h3>
-          <div className="address-container">
+            <h3>Contact Info</h3>
+            <div className="address-container">
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i>  Address
+                  <i className="fa fa-map-marker"></i> Address
                 </span>{" "}
               </p>
               <div className="map-container">
@@ -159,24 +166,21 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : "loading"}
               </p>
             </div>
+            <div className="contact-item">
+            </div>
           </div>
           <div className="col-md-12">
             <div className="row">
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href={props.data ? props.data.instagram : "/"}>
                       <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    <a href={props.data ? props.data.tiktok : "/"}>
                       <i className="fab fa-tiktok"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fab fa-facebook"></i>
                     </a>
                   </li>
                 </ul>
@@ -189,12 +193,19 @@ export const Contact = (props) => {
         <div className="container text-center">
           <p>
             &copy; 2024 Eyesover aesthetics. Design by{" "}
-            <a href="www.linkedin.com/in/orgesasvarca" rel="nofollow">
+            <a
+              href="www.linkedin.com/in/orgesasvarca"
+              rel="nofollow"
+            >
               Orgesa Svarca
             </a>
           </p>
+          <p>
+          <a href="/privacypolicy.html">Privacy Policy</a>
+              </p>
         </div>
       </div>
     </div>
   );
 };
+

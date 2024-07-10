@@ -5,42 +5,42 @@
   },
   "Features": [
     {
-      "icon": "img/Features/IMG_1506.PNG",
-      "title": "Classic",
+      "icon": "img/Features/classicsetcover.jpeg",
+      "title": "The Classic set",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
       "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
-      "icon": "img/Features/IMG_1507.PNG",
-      "title": "Hybrid",
+      "icon": "img/Features/Eyesoverhydridsetcover.jpeg",
+      "title": "Eyesover Hybrid set",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
       "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
-      "icon": "img/Features/IMG_1508.PNG",
-      "title": "Volume",
+      "icon": "img/Features/Volumesetcover.jpeg",
+      "title": "The Volume set",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
       "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     },
     {
-      "icon": "img/Features/IMG_1509.PNG",
-      "title": "Custom",
+      "icon": "img/Features/wispeySetCover.jpeg",
+      "title": "The Wispy set",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
       "galleryImages": ["img/Features/IMG_1506.PNG","img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG", "img/Features/IMG_1506.PNG"]
     }
   ],
 
   "About": {
-    "paragraph": "As an experienced eyelash artist and the owner of Eyesover Aesthetic with 3 years of industry expertise and passion for enhancing natural beauty, I specialize in creating a range of lash styles from supernatural to full and fluffy hybrids, volumes, and wispy sets alongside customed styles. I take pride in my creative approach to deliver the most satisfying results to each individual client, conveying precise and customized results tailored to their unique preferences. With a commitment to top quality products and meticulous attention to detail, I strive to provide a serene and relaxing experience for every appointment, ensuring that my clients walk away feeling confident and glamorous.",
+    "paragraph": "With over 3 years in the lash industry, we bring a wealth of experience and a deep understanding of what makes lashes look stunning and feel comfortable.We improve our skills continually in the latest techniques to ensure you receive the best service possible.",
     "Why": [
       "3 years of industry experience",
-      "Tailored lashes to your eyes",
+      "Uniquely Tailored Lash Styles",
       "Top qaulity products",
       "Long lasting"
     ],
     "Why2": [
       "Master educator",
-      "Lorem ipsum dolor",
+      "Exceptional Client Care",
       "Exercitation ullamco",
       "Lorem ipsum dolor"
     ]
@@ -176,10 +176,9 @@
   ],
   "Contact": {
     "address": "Enfield",
-    "phone": "+44 7787142131",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "phone": "+44 7766 727023",
+    "email": "zeynep@eyesoveraesthetics.co.uk",
+    "tiktok": "https://www.tiktok.com/@eyesoverr?_t=8nutQhwkAPR&_r=1",
+    "instagram": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr"
   }
 }

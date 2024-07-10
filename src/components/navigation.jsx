@@ -14,25 +14,16 @@ export const Navigation = (props) => {
           </button>
           <div className="navbar-brand-container">
             <div className="navbar-icons-left">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tiktok.com/@eyesoverr?_t=8nutQhwkAPR&_r=1" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-tiktok"></i>
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-facebook"></i>
               </a>
             </div>
             <a className="navbar-brand page-scroll" href="#page-top">
-              EYESOVER <span className="brand-subtext">aesthetics</span>
+              EYESOVER <span className="brand-subtext">AESTHETICS</span>
             </a>
-
-            <div className="navbar-icons-right">
-              <a href="#basket" className="page-scroll">
-                <i className="fas fa-shopping-basket"></i>
-              </a>
-            </div>
         </div>
         </div>
       </div>
