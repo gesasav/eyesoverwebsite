@@ -364,86 +364,6 @@ header .intro-text {
   }
 }
 
-/* Features Section
-#features {
-  background: #f6f6f6;
-  padding-bottom: 40px;
-  padding-top: 30px;
-}
-
-#features img {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-  object-fit: cover;
-}
-
-.feature-item {
-  position: relative;
-}
-
-.gallery-popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(126, 126, 126, 0.586);
-  padding: 40px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-popup h3 {
-  margin-bottom: 20px; 
-  color: #fff;
-  text-align: center; 
-}
-
-.gallery-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(2, 1fr);   
-  grid-gap: 20px; 
-}
-
-.gallery-content img {
-  width: 200px !important;
-  height: 200px !important;
-  object-fit: cover;
-  border-radius: 0 !important; 
-}
-
-.feature-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.feature-item:hover img {
-  transform: scale(1.1);
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  display: none; 
-} */
-
 
 /* About Section */
 #about {
@@ -584,8 +504,87 @@ video {
   text-decoration: underline;
 } */
 
+/* Features Section
+#features {
+  background: #f6f6f6;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
 
+#features img {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
 
+.feature-item {
+  position: relative;
+}
+
+.gallery-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(126, 126, 126, 0.586);
+  padding: 40px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-popup h3 {
+  margin-bottom: 20px; 
+  color: #fff;
+  text-align: center; 
+}
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);   
+  grid-gap: 20px; 
+}
+
+.gallery-content img {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 0 !important; 
+}
+
+.feature-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover img {
+  transform: scale(1.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; 
+} */
+
+/* General styles for #features container */
 #features {
   background: #f6f6f6;
   padding-bottom: 40px;
@@ -595,6 +594,7 @@ video {
   position: relative; /* Ensure relative positioning for scroll buttons */
 }
 
+/* Flex container for items */
 #features .lashStyles-items {
   display: flex;
   flex-wrap: wrap;
@@ -602,11 +602,13 @@ video {
   gap: 20px; /* Adjust the gap between items */
 }
 
+/* Individual item styles */
 #features .lashStyles-item {
   width: 300px; /* Adjust the width of each item */
   margin-bottom: 20px;
 }
 
+/* Image container within each item */
 #features .image-container {
   position: relative;
   overflow: hidden;
@@ -614,6 +616,7 @@ video {
   height: 300px; /* Adjust the height of the image container */
 }
 
+/* Responsive image styles */
 #features .img-responsive {
   width: 100%;
   height: 100%;
@@ -621,6 +624,7 @@ video {
   display: block;
 }
 
+/* Overlay styles */
 #features .overlay {
   position: absolute;
   top: 0;
@@ -636,15 +640,18 @@ video {
   transition: opacity 0.3s ease;
 }
 
+/* Hover effect for overlay */
 #features .lashStyles-link:hover .overlay {
   opacity: 1;
 }
 
+/* Title styles */
 #features .title {
   font-size: 1.5em;
   text-align: center;
 }
 
+/* Video container within each item */
 #features .video-container {
   position: relative;
   overflow: hidden;
@@ -653,12 +660,33 @@ video {
   margin-bottom: 20px;
 }
 
+/* Responsive video styles */
 #features .video-responsive {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Adjust as needed */
   display: block;
 }
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  #features .lashStyles-item {
+    margin-bottom: 20px;
+  }
+
+  #features .image-container {
+    height: 200px; /* Adjust height of image container for smaller screens */
+  }
+
+  #features .video-container {
+    height: 200px; /* Adjust height of video container for smaller screens */
+  }
+
+  #features .title {
+    font-size: 1.2em; /* Reduce font size for titles on smaller screens */
+  }
+}
+
 
 /* Testimonials Section */
 #testimonials {
