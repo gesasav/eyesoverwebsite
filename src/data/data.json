@@ -45,52 +45,123 @@
       "Lorem ipsum dolor"
     ]
   },
-  "Gallery": [
+  "LashStyles": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "The Classic set",
+      "smallImage": "img/Features/classicsets.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+   
+    {
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/Eyesoverhydridsetcover.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "The Classic set",
+      "smallImage": "img/Features/classicset.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },     
+    {
+      "title": "The Eyesover Hybrid",
+      "videoUrl": "img/Features/video.mp4",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "video"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "The Wispy set",
+      "smallImage": "img/Features/wispyset.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "The Classic set",
+      "smallImage": "img/Features/classicsetcover.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "The Eyesover Hybrid",
+      "videoUrl": "img/Features/video2.mp4",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "video"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/hybridset.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "title": "The Wispy set",
+      "smallImage": "img/Features/wispeySetCover.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/eyesoverhy2.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "The Volume set",
+      "smallImage": "img/Features/Volumeset.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "videoUrl": "img/Features/video3.mp4",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "video"
+    },
+    {
+      "title": "The Wispy set",
+      "smallImage": "img/Features/wispeysett.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/eyesoverhy3.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+    {
+      "title": "The Volume set",
+      "smallImage": "img/Features/Volumesetcover.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "videoUrl": "img/Features/video4.mp4",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "video"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/hybridSet2.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "videoUrl": "img/Features/video5.mp4",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "video"
+    },
+    {
+      "title": "The Eyesover Hybrid",
+      "smallImage": "img/Features/eyesoverhy2.jpeg",
+      "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
+      "mediaType": "image"
     }
+
   ],
   "Services": [
     {
