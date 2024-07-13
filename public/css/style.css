@@ -668,25 +668,6 @@ video {
   display: block;
 }
 
-/* Media queries for mobile devices */
-@media (max-width: 768px) {
-  #features .lashStyles-item {
-    margin-bottom: 20px;
-  }
-
-  #features .image-container {
-    height: 200px; /* Adjust height of image container for smaller screens */
-  }
-
-  #features .video-container {
-    height: 200px; /* Adjust height of video container for smaller screens */
-  }
-
-  #features .title {
-    font-size: 1.2em; /* Reduce font size for titles on smaller screens */
-  }
-}
-
 
 /* Testimonials Section */
 #testimonials {
