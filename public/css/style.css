@@ -589,7 +589,6 @@ video {
   background: #f6f6f6;
   padding-bottom: 40px;
   padding-top: 130px;
-  max-height: calc(4 * (300px + 20px)); /* Set max height for 3 rows */
   overflow-y: auto; /* Enable vertical scrolling */
   position: relative; /* Ensure relative positioning for scroll buttons */
 }
@@ -666,6 +665,42 @@ video {
   height: 100%;
   object-fit: cover; /* Adjust as needed */
   display: block;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  #features .lashStyles-items {
+    gap: 10px; /* Adjust gap between items */
+  }
+
+  #features .lashStyles-item {
+    width: calc(50% - 10px); /* Two items per row */
+    margin-bottom: 10px;
+  }
+
+  #features .image-container,
+  #features .video-container {
+    height: 200px; /* Adjust height of image and video containers */
+  }
+}
+
+/* Media query for extra small devices */
+@media (max-width: 480px) {
+  #features .lashStyles-items {
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  #features .lashStyles-item {
+    width: calc(100% - 10px); /* Two items per row, one item per slide */
+    flex: 0 0 calc(50% - 10px); /* Ensure each item takes half the width */
+    margin-bottom: 10px;
+  }
+
+  #features .image-container,
+  #features .video-container {
+    height: 150px; /* Adjust height of image and video containers */
+  }
 }
 
 
