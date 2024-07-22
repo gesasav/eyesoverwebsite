@@ -1,6 +1,15 @@
 import React from "react";
 
 export const About = (props) => {
+  const formattedParagraph = props.data && props.data.paragraph 
+    ? props.data.paragraph.split('\\n').map((item, key) => (
+      <React.Fragment key={key}>
+        {item}
+        <br />
+      </React.Fragment>
+    )) 
+    : null;
+
   return (
     <div id="about">
       <div className="container">
@@ -12,7 +21,7 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About me</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              <p>{formattedParagraph}</p>
               <h3>Why Choose Eyesover Aesthetics?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">

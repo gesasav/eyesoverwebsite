@@ -31,7 +31,7 @@
   ],
 
   "About": {
-    "paragraph": "Hey besties 🤍\n\n\nWelcome to my studio! I’m delighted to have you here. As a dedicated solo artist with 3 years experience, I take great pride in providing a personal and genuine touch to each client’s desired looks. My aim is to make sure you feel relaxed, pampered and confident during every visit to my studio. As I continue to hone my skills and stay updated with the latest techniques, I promise to enhance your natural beauty with utmost care and precision. I look forward to seeing you all.",
+    "paragraph": "Hey besties 🤍\\n\\nWelcome to my studio! I’m delighted to have you here. As a dedicated solo artist with 3 years experience, I take great pride in providing a personal and genuine touch to each client’s desired looks. My aim is to make sure you feel relaxed, pampered and confident during every visit to my studio. As I continue to hone my skills and stay updated with the latest techniques, I promise to enhance your natural beauty with utmost care and precision. I look forward to seeing you all.",
     "Why": [
       "3 years of industry experience",
       "Uniquely Tailored Lash Styles",
@@ -60,9 +60,9 @@
     },   
     {
       "title": "The Volume set",
-      "smallImage": "img/Features/9.mp4",
+      "videoUrl": "img/Features/9.mp4",
       "permalink": "https://www.instagram.com/eyesover.aesthetics?igsh=MXVnaW5wZm9iOTR0aQ%3D%3D&utm_source=qr",
-      "mediaType": "image"
+      "mediaType": "video"
     },  
     {
       "title": "The Classic set",
