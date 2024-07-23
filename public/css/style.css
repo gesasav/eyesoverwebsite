@@ -680,7 +680,7 @@ video {
 
   #features .image-container,
   #features .video-container {
-    height: 150px; /* Adjust height of image and video containers */
+    height: 190px; /* Adjust height of image and video containers */
   }
 }
 
@@ -699,7 +699,7 @@ video {
 
   #features .image-container,
   #features .video-container {
-    height: 100px; /* Adjust height of image and video containers */
+    height: 150px; /* Adjust height of image and video containers */
   }
 }
 
