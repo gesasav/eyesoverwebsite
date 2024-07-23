@@ -699,7 +699,7 @@ video {
 
   #features .image-container,
   #features .video-container {
-    height: 70px; /* Adjust height of image and video containers */
+    height: 100px; /* Adjust height of image and video containers */
   }
 }
 
