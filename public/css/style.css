@@ -688,18 +688,18 @@ video {
 @media (max-width: 480px) {
   #features .lashStyles-items {
     flex-wrap: nowrap; /* Ensure no wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling */
+    /*overflow-x: auto;  Enable horizontal scrolling */
   }
 
   #features .lashStyles-item {
-    width: calc(100% - 10px); /* Two items per row, one item per slide */
-    flex: 0 0 calc(50% - 10px); /* Ensure each item takes half the width */
+    width: calc(100% - 20px); /* Two items per row, one item per slide */
+    flex: 0 0 calc(50% - 20px); /* Ensure each item takes half the width */
     margin-bottom: 10px;
   }
 
   #features .image-container,
   #features .video-container {
-    height: 150px; /* Adjust height of image and video containers */
+    height: 70px; /* Adjust height of image and video containers */
   }
 }
 
