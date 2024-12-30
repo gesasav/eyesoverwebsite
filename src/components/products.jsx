@@ -180,17 +180,15 @@ export const Services = (props) => {
                   </div>
                 </div>
               )}
-        <a
-          href="#"
-          className="banner"
-          onClick={togglePopup}
-          style={{ textDecoration: "none", color: "#000", fontSize: "19px", fontStyle: "italic", fontWeight:"bold"}}
-        >
-         <div className="scrolling-text">
+        <button className="page-scroll" onClick={togglePopup}   style={{
+    all: "unset", // Resets all default button styles
+    cursor: "pointer", // Ensures it still looks clickable
+    width: "100%",
+  }}>
+         <div className="scrolling-text" style={{ textDecoration: "none", color: "#000", fontSize: "19px", fontStyle: "italic", fontWeight:"bold"}}>
           <span>SIGN UP TO THE WAITLIST TODAY!</span>
         </div>
-
-        </a>
+        </button>
       </div>
     </div>
   );
