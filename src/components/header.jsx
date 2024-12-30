@@ -1,14 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 export const Header = (props) => {
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    // Create script element
-    const script = document.createElement('script');
-    script.id = 'setmore_script';
-    script.type = 'text/javascript';
-    script.src = 'https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js';
+    // Create script element for Setmore
+    const script = document.createElement("script");
+    script.id = "setmore_script";
+    script.type = "text/javascript";
+    script.src = "https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js";
     document.body.appendChild(script);
 
     // Cleanup function to remove script when component unmounts
@@ -18,11 +18,14 @@ export const Header = (props) => {
   }, []);
 
   const handleBookingClick = () => {
-    window.open('https://booking.setmore.com/scheduleappointment/6694bf83-dfd0-4f29-9109-820f748278a8', '_blank');
+    window.open(
+      "https://booking.setmore.com/scheduleappointment/6694bf83-dfd0-4f29-9109-820f748278a8",
+      "_blank"
+    );
   };
 
   return (
-    <header id="header">
+    <header id="header" style={{ position: "relative" }}>
       <div className="intro">
         <div className="overlay">
           <div className="container">
@@ -46,8 +49,8 @@ export const Header = (props) => {
                 >
                   Book now
                 </button>
-                {" "}
               </div>
+
             </div>
           </div>
         </div>

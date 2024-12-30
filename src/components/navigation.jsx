@@ -84,6 +84,11 @@ export const Navigation = (props) => {
                 Contact
               </a>
             </li>
+            <li>
+              <a href="#services" className="page-scroll">
+                Digital Products
+              </a>
+            </li>
           </ul>
         </div>
       </div>

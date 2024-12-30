@@ -3,6 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/lashStyles";
 import { About } from "./components/about";
+import { Services as Products} from "./components/products"
 //import { Services } from "./components/products";
 // import { Gallery } from "./components/gallery";
 // import { Testimonials } from "./components/reviews";
@@ -30,7 +31,7 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
       <Features data={landingPageData.LashStyles}/>
-      {/* <Services data={landingPageData.Services} /> */}
+      <Products data={landingPageData.Services} /> 
       {/* <Gallery data={landingPageData.Gallery} /> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
