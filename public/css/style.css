@@ -461,6 +461,27 @@ header .intro-text {
   margin-bottom: 40px;
 }
 
+/* Add this CSS */
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 
 
 

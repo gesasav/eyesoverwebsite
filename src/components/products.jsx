@@ -186,9 +186,10 @@ export const Services = (props) => {
           onClick={togglePopup}
           style={{ textDecoration: "none", color: "#000", fontSize: "19px", fontStyle: "italic", fontWeight:"bold"}}
         >
-          <marquee behavior="scroll" direction="left">
-            SIGN UP TO THE WAITLIST TODAY!
-          </marquee>
+         <div className="scrolling-text">
+          <span>SIGN UP TO THE WAITLIST TODAY!</span>
+        </div>
+
         </a>
       </div>
     </div>
