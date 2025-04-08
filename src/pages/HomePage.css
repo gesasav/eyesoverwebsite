@@ -338,6 +338,11 @@ button {
         align-items: center;
         text-align: center;
       }
+
+      .logo-image{
+        padding-right: 30px;
+      }
+
       
       .nav-links {
         display: flex;
@@ -345,6 +350,7 @@ button {
         justify-content: center;
         gap: 2rem;             /* Add space between Home and Contact */
         margin-top: 1rem;
+        padding-left: 20px;
       }
       
       .nav-link {
