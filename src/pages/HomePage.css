@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5ef;
+    color: #1d2a1d;
+}
+
+.header {
+    background-color: #09290E;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .footer {
+    background-color: #09290E;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .logo-image {
+    width: 200px;  /* Adjust size of the logo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Ensures the logo is centered */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between; /* Space out Home and Contact on left and right */
+    align-items: center;
+    padding: 0 2rem; /* Ensure some space from the edges */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between; /* Space out the links on left and right */
+    width: 100%;
+    max-width: 400px; /* Limit the width of the nav links container */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white; /* Default color */
+    font-size: 1.2rem;
+    font-weight: normal;  /* Remove bold text */
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #f5f5ef; /* Color change on hover */
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f5f5ef; /* Line color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+  }
+  
+  /* Remove blue color and styling once clicked (focus and visited) */
+  .nav-link:focus,
+  .nav-link:visited {
+    color: white;  /* Ensure link color is white even after being clicked */
+    text-decoration: none; /* Remove any underline after being clicked */
+  }
+  
+  
+
+.banner a{
+    text-decoration: none; 
+    color: black;
+}
+
+
+
+/* Container for intro section */
+.intro {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the text and image */
+    align-items: center;            /* Vertically center the content */
+    gap: 2rem;
+    margin: auto;
+    padding: 0 5rem;
+    padding-top: 20px;
+    width: 1500px;
+}
+
+.intro-text {
+    flex: 1 1 50%;                  /* Make sure it takes up 50% of the container */
+    text-align: left;               /* Ensure the text is aligned left */
+}
+
+.intro-text h2,
+.intro-text h3 {
+    text-align: center;
+    font-family: "Yeseva One", serif;
+}
+
+.intro-text h2 {
+    font-weight: bold;
+}
+
+.intro-text h3 {
+    font-weight: lighter;
+}
+
+.intro-image {
+    flex: 1 1 50%;                  /* Take up 50% of the container */
+    max-width: 100%;                /* Ensure the image scales correctly */
+    object-fit: cover;              /* Ensure the image covers the area without distortion */
+    height: 500px;
+}
+
+.mobile-only {
+    display: none;
+  }
+
+.highlight {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-family: "Yeseva One", serif;
+}
+
+.highlight {
+    text-align: center;             /* Center-align the content */
+    margin: 2rem 0;                 /* Add margin to separate from the intro */
+}
+
+.banner p{
+ font-family: "Yeseva One", serif;
+ font-weight: bold;
+ font-size: 60px;
+ text-align: center;
+}
+.banner .logo{
+    display: flex;               /* Use flexbox for alignment */
+  justify-content: center;     /* Align items horizontally to the center */
+  align-items: center;         /* Align items vertically to the center */
+  gap: 1rem;  
+  padding-bottom: 1rem;  
+}
+
+.banner img{
+height: 200px;
+}
+/* Call to action section */
+.cta-section {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-section h2 {
+    font-family: "Noto Serif Display", serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.cta-button {
+    background-color: #1d2a1d;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Container for the services section */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+}
+
+/* Each service block */
+.services > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Ensure the text and image are spaced out */
+    text-align: center;
+    gap: 2rem;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 80%; /* Adjust width as needed */
+}
+
+/* Text block */
+.text_app, .text_model, .text_digital {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%; /* Adjust width as needed */
+    text-align: center; /* Align text to the left */
+}
+
+/* Image block with fixed size (100px by 100px) */
+.image_app, .image_model, .image_digital {
+    width: 350px; /* Fixed width */
+    height: 450px; /* Fixed height */
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal content styling */
+  .modal-content {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close button inside modal */
+  .close-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #1d2a1d;
+    cursor: pointer;
+  }
+  
+  /* Styling for form title */
+  .form-title {
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    font-size: 24px;
+    color: #09290E;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form input fields */
+  input[type="email"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #09290E;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #1d2a1d;
+    background-color: #f5f5ef;
+  }
+  
+  input[type="submit"] {
+    background-color: #1d2a1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #09290E;
+  }
+/* Ensure images fill the 100x100 container, maintaining the aspect ratio */
+img {
+    width: 100%; /* Ensure images fill the container */
+    height: 100%; /* Ensure images fill the container */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+/* Image alignment for alternating sides */
+.appointment .image_app {
+    order: 1; /* Place the image on the right side for this section */
+}
+
+.model-call .image_model {
+    order: -1; /* Place the image on the left side for this section */
+}
+
+.digital-products .image_digital {
+    order: 1; /* Place the image on the right side for this section */
+}
+
+/* Button styling */
+button {
+    margin-top: 1rem;
+}
+
+.outline-button {
+    border: 2px solid #1d2a1d;
+    background: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1d2a1d;
+    width: 100%;
+}
+
+/* Media query for devices with max width of 768px (iPhone, tablets) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .nav-links {
+        display: flex;
+        flex-direction: row;  /* Make nav items inline */
+        justify-content: center;
+        gap: 2rem;             /* Add space between Home and Contact */
+        margin-top: 1rem;
+      }
+      
+      .nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+    .desktop-only {
+        display: none;
+      }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .intro h3 {
+        font-size: 15px;
+    }
+
+    .intro-text {
+        flex: 1 1 100%;
+        font-size: smaller;
+    }
+
+    .intro-text p{
+        padding-top: 15px;
+    }
+
+    .mobile-only {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .services > div {
+        flex-direction: column;  /* Stack content vertically */
+        padding: 1rem; /* Adjust padding for mobile view */
+    }
+
+    .text_app, .text_model, .text_digital {
+        width: 100%; /* Full width */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .image_app, .image_model, .image_digital {
+        width: 100%; /* Make images fill the container */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 1rem; /* Add space between image and button */
+    }
+
+    .highlight {
+        margin: 0;
+    }
+
+    .image_model {
+        order: 1 !important;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Media query for smaller screens like iPhone 5, iPhone 4 */
+@media (max-width: 430px) {
+    .intro h2 {
+        font-size: 1.25rem; /* Adjust font size for smaller devices */
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 0.8rem 1.8rem; /* Adjust padding for smaller screens */
+    }
+
+    .highlight {
+        margin: 0;
+    }
+
+    .services > div {
+        padding: 1rem; /* Adjust padding */
+        gap: 1rem; /* Adjust the gap between text and image */
+    }
+
+    .image_app, .image_model, .image_digital {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Keep aspect ratio intact */
+    }
+
+    .image_model {
+        order: 1 !important;
+    }
+
+    .text_app, .text_model, .text_digital {
+        text-align: center; /* Center-align the text */
+    }
+
+    .banner p {
+        font-size: 40px;
+    }
+}
+
+/* Media query for iPad Pro (larger tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .intro {
+        padding: 0 2rem; /* Add more padding for larger tablets */
+        width: 100%; /* Full width */
+        padding-top: 15px;
+    }
+
+    .cta-button {
+        font-size: 1.1rem; /* Slightly larger button text */
+        padding: 1rem 2rem; /* Increase padding for better readability */
+    }
+
+    .highlight {
+        margin: 0;
+    }
+
+    .services > div {
+        width: 80%; /* Adjust the width for larger tablets */
+    }
+
+    .services {
+        width: 100%;
+    }
+}

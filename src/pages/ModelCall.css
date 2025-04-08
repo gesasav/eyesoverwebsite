@@ -1,0 +1,148 @@
+.model-slot-container {
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d2a1d;
+    background: #f9f9f2;
+  }
+  
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto 2rem auto;
+    max-width: 1000px;
+    text-align: left;
+  }
+  
+  .info-block {
+    flex: 1 1 48%;
+  }
+  
+  .info-block ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .info-block li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .model-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .model-form h4,
+  .model-form h5 {
+    margin-top: 1.5rem;
+    font-family: 'Yeseva One', serif;
+    color: #09290E;
+  }
+  
+  .model-form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .model-form input[type="text"],
+  .model-form input[type="email"],
+  .model-form input[type="tel"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.availability-block p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h6{
+    font-style: italic;
+    color: gray;
+    font-size: smaller;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+  .inline {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .inline label {
+    margin: 0;
+  }
+  
+  .submit-btn {
+    margin-top: 2rem;
+    background-color: #1d2a1d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2a4a2a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+    }
+
+    .banner img {
+        height: 125px;
+    }
+  
+    .info-block {
+      flex: 1 1 100%;
+    }
+  
+    .inline {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .availability label {
+      display: block;
+    }
+  }
+  
