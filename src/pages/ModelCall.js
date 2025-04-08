@@ -3,38 +3,11 @@ import emailjs from "emailjs-com";
 import { Link } from 'react-router-dom';
 import './ModelCall.css'
 
-const initialState = {
-  fullName: "",
-  phone: "",
-  email: "",
-  instagram: "",
-  weekdays: [],
-  weekends: [],
-  hadLashesBefore: "",
-  allergies: "",
-  eyeConditions: "",
-};
 
 const ModelCall = () => {
-  const [state, setState] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    if (type === "checkbox" && name === "weekdays" || name === "weekends") {
-      setState((prev) => ({
-        ...prev,
-        [name]: checked
-          ? [...prev[name], value]
-          : prev[name].filter((item) => item !== value),
-      }));
-    } else if (type === "radio") {
-      setState((prev) => ({ ...prev, [name]: value }));
-    } else {
-      setState((prev) => ({ ...prev, [name]: value }));
-    }
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
