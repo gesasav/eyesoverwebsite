@@ -62,7 +62,7 @@ const HomePage = () => {
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="mailto:enquiries@eyesoveraesthetics.com">
-  <i className="fa fa-envelope"></i> Email Us
+  <i className="fa fa-envelope"></i>
 </a>
 
         <a href="https://www.tiktok.com/@eyesoverr?_t=8nutQhwkAPR&_r=1" target="_blank" rel="noopener noreferrer">

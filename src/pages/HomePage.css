@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5ef;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f5f5ef !important;
     color: #1d2a1d;
 }
 
@@ -42,7 +42,7 @@ body {
   }
   
   .nav-link {
-    text-decoration: none;
+    text-decoration: none !important;;
     color: white; /* Default color */
     font-size: 1.2rem;
     font-weight: normal;  /* Remove bold text */
@@ -68,11 +68,16 @@ body {
   .nav-link:hover::after {
     transform: scaleX(1); /* Show the underline on hover */
   }
+
+  .nav-link a{
+    text-decoration: none !important;
+    color: white; /* Default color */
+  }
   
   /* Remove blue color and styling once clicked (focus and visited) */
   .nav-link:focus,
   .nav-link:visited {
-    color: white;  /* Ensure link color is white even after being clicked */
+    color: white !important;;  /* Ensure link color is white even after being clicked */
     text-decoration: none !important; /* Remove any underline after being clicked */
   }
   
@@ -130,7 +135,7 @@ body {
 .highlight {
     font-weight: bold;
     margin-top: 1rem;
-    font-family: "Yeseva One", serif;
+    font-family: "Yeseva One", serif !important;
 }
 
 .highlight {
@@ -139,7 +144,7 @@ body {
 }
 
 .banner p{
- font-family: "Yeseva One", serif;
+ font-family: "Yeseva One", serif !important;
  font-weight: bold;
  font-size: 60px;
  text-align: center;
@@ -344,7 +349,7 @@ button {
       
       .nav-link {
         font-size: 1rem;
-        text-decoration: none;
+        text-decoration: none !important;
       }
 
     .desktop-only {
