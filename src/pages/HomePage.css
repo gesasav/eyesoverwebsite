@@ -24,6 +24,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto; /* Ensures the logo is centered */
+    padding-left: 20px;
   }
   
   .nav {
@@ -72,13 +73,13 @@ body {
   .nav-link:focus,
   .nav-link:visited {
     color: white;  /* Ensure link color is white even after being clicked */
-    text-decoration: none; /* Remove any underline after being clicked */
+    text-decoration: none !important; /* Remove any underline after being clicked */
   }
   
   
 
 .banner a{
-    text-decoration: none; 
+    text-decoration: none !important; 
     color: black;
 }
 
