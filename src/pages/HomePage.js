@@ -18,7 +18,7 @@ const HomePage = () => {
     <Link to="/" className="nav-link" id="home-link">
       Home
     </Link>
-    <a href="tel:+447787142131" className="nav-link" id="contact-link">
+    <a href="tel:+447755727023" className="nav-link" id="contact-link">
   Contact
 </a>
   </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
         <section className="cta-section">
 
         <h2>Unleash Your <em>True Potential</em></h2>
-        <button onClick={() => setShowForm(true)} className="cta-button">SHOP MY DIGITAL PRODUCTS</button>
+        <button onClick={() => setShowForm(true)} className="cta-button">SIGN UP TO HEAR MORE</button>
       </section>
 
       <section className="banner">
@@ -84,7 +84,7 @@ const HomePage = () => {
       </div>
 
       <div className="model-call">
-      <div className="text_model">  <h3>Model Call</h3>
+      <div className="text_model">  <h3>Model Call</h3> 
         <p>Are you ready to be part of an exclusive lash transformation? I’m looking for models every so often to refine new lash styles and techniques.</p>
         <Link to="/model-call">
         <button className="outline-button">APPLY NOW</button>
@@ -96,7 +96,9 @@ const HomePage = () => {
   <div className="digital-products">
   <div className="text_digital"> <h3>Digital Products</h3>
     <p>Take your lash career to the next level with my specifically crafted digital products designed to help you grow, learn, and succeed.</p>
-    <button onClick={() => setShowForm(true)} className="outline-button">SHOP NOW</button>
+    <Link to="download-page">
+        <button className="outline-button">VIEW E-BOOKS</button>
+      </Link>
     </div>
   <div className="image_digital"> <img src="/images/ebook.jpg" alt="E-book" className="ebook-image" /></div>
   </div>

@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import Booking from "./pages/Booking";
 import ModelCall from "./pages/ModelCall";
+import DownloadPage from "./pages/DownloadPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/model-call" element={<ModelCall />} />
+        <Route path="/download-page" element={<DownloadPage />} />
       </Routes>
     </Router>
   );

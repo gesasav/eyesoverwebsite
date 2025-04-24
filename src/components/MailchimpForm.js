@@ -11,7 +11,7 @@ const MailchimpForm = () => {
         noValidate
         className="validate"
       >
-        <h2>Sign up to our waitlist</h2>
+        <h2>Subscribe to stay in the loop</h2>
         <div className="mc-field-group">
           <label>Email Address *</label>
           <input type="email" name="EMAIL" required />
