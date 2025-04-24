@@ -53,7 +53,6 @@ const DownloadPage = () => {
 <button
   className="cta-button"
   onClick={async () => {
-    const form = document.getElementById("model-form");
     const email = document.getElementById("email").value;
     const name = document.getElementById("fullName").value;
 
