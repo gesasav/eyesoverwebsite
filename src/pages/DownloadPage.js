@@ -73,7 +73,12 @@ const DownloadPage = () => {
     setIsLoading(true);
 
     try {
-        window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
+        const link = document.createElement("a");
+        link.href = "https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf";
+        link.download = "WispyEbook.pdf"; // Forces file download (not open in tab)
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     } catch (err) {
 
     }
