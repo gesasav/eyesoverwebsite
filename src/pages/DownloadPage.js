@@ -34,6 +34,7 @@ const DownloadPage = () => {
     </div>
     <div className="info-block">
     <form className="model-form" id="model-form" onSubmit={(e) => e.preventDefault()}>
+
   <div className="guide-header">
     <p className="subheading">YOUR</p>
     <h2>ultimate guide to</h2>
@@ -50,48 +51,68 @@ const DownloadPage = () => {
   <label>Email Address:</label>
   <input type="email" name="email" required id="email" />
 
-
-<button
+  <button
+  type="button"
   className="cta-button"
   onClick={async (e) => {
-    e.preventDefault(); // prevent form submission
-    const email = document.getElementById("email").value;
-    const name = document.getElementById("fullName").value;
+    e.preventDefault();
+    const form = document.getElementById("model-form");
+    const email = document.getElementById("email").value.trim();
+    const name = document.getElementById("fullName").value.trim();
 
     if (!email && !name) {
       alert("Please fill in your name and email before downloading.");
       return;
     }
     if (!email) {
-        alert("Please fill in your email before downloading.");
-        return;
-      }
-      if (!name) {
-        alert("Please fill in your name before downloading.");
-        return;
-      }
+      alert("Please fill in your email before downloading.");
+      return;
+    }
+    if (!name) {
+      alert("Please fill in your name before downloading.");
+      return;
+    }
 
-    setIsLoading(false);
-    alert("Thank you for downloading!.");
+    setIsLoading(true);
 
-    setTimeout(() => {
+    try {
+      // ✅ Send form data silently via EmailJS
+      await emailjs.sendForm(
+        "service_8bk6yra",         // your EmailJS service ID
+        "template_7luj9v8",        // your EmailJS template ID
+        form,                      // HTML form element
+        "1l53LXLP3GtXelnpL"        // your EmailJS user/public key
+      );
+
+      // ✅ Trigger file download
+      const link = document.createElement("a");
+      link.href = "https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf";
+      link.download = "WispyEbook.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // ✅ Show thank-you popup
+      alert("Thank you! Your eBook download has started.");
+
+      // ✅ Redirect after 2 seconds
+      setTimeout(() => {
         window.location.href = "/";
       }, 2000);
 
-    try {
-        const link = document.createElement("a");
-        link.href = "https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf";
-        link.download = "WispyEbook.pdf"; // Forces file download (not open in tab)
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    } catch (err) {
-
+      setIsLoading(false);
+    } catch (error) {
+      console.error("EmailJS submission failed:", error);
+      alert("Something went wrong. Please try again.");
+      setIsLoading(false);
     }
   }}
 >
- Download E-Book
-</button></form>
+  Download E-Book
+</button>
+
+
+</form>
 
        {/* Loading Spinner */}
        {isLoading && (
