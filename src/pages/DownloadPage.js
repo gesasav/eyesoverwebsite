@@ -33,7 +33,7 @@ const DownloadPage = () => {
     <img class="intro-image-download" src="/images/ebook-cover.jpg" alt="Zeynep" />
     </div>
     <div className="info-block">
-    <form className="model-form" id="model-form">
+    <form className="model-form" id="model-form" onSubmit={(e) => e.preventDefault()}>
   <div className="guide-header">
     <p className="subheading">YOUR</p>
     <h2>ultimate guide to</h2>
@@ -53,7 +53,8 @@ const DownloadPage = () => {
 
 <button
   className="cta-button"
-  onClick={async () => {
+  onClick={async (e) => {
+    e.preventDefault(); // prevent form submission
     const email = document.getElementById("email").value;
     const name = document.getElementById("fullName").value;
 
@@ -70,7 +71,12 @@ const DownloadPage = () => {
         return;
       }
 
-    setIsLoading(true);
+    setIsLoading(false);
+    alert("Thank you for downloading!.");
+
+    setTimeout(() => {
+        window.location.href = "/";
+      }, 2000);
 
     try {
         const link = document.createElement("a");
