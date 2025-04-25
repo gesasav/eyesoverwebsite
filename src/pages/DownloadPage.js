@@ -10,6 +10,7 @@ const DownloadPage = () => {
     <><div className="model-container">
       <header className="header">
       <nav className="nav">
+
   <div className="logo-container">
     <img className="logo-image" src="/images/logo_green.jpg" alt="Zeynep" />
   </div>
@@ -24,9 +25,9 @@ const DownloadPage = () => {
   </div>
 </nav>
       </header>
-    </div>
+    </div> 
     <div className="container my-5">
-<div className="model-slot-container">
+   <div className="model-slot-container">
   <div className="info-section">
     <div className="info-block">
     <img class="intro-image-download" src="/images/ebook-cover.jpg" alt="Zeynep" />
@@ -72,15 +73,7 @@ const DownloadPage = () => {
     setIsLoading(true);
 
     try {
-
-
-      // Trigger download
-      const link = document.createElement("a");
-      link.href = "/Ebooks/WispyE-book.pdf";
-      link.download = "Wispy-Lash-Guide.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+        window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
     } catch (err) {
 
     }
