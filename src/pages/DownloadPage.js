@@ -62,6 +62,7 @@ const DownloadPage = () => {
   <button
   type="button"
   className="cta-button"
+  disabled={!email.trim() || !fullName.trim()}
   onClick={async (e) => {
     e.preventDefault();
     const form = document.getElementById("model-form");
@@ -83,6 +84,9 @@ const DownloadPage = () => {
 
     setIsLoading(true);
 
+          // ✅ Trigger file download
+          window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
+
     try {
       // ✅ Send form data silently via EmailJS
       await emailjs.sendForm(
@@ -92,8 +96,6 @@ const DownloadPage = () => {
         "1l53LXLP3GtXelnpL"        // your EmailJS user/public key
       );
 
-      // ✅ Trigger file download
-      window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
 
 
       // ✅ Show thank-you popup
