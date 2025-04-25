@@ -106,7 +106,7 @@ const DownloadPage = () => {
       // ✅ Redirect after 2 seconds
       setTimeout(() => {
         window.location.href = "/";
-      }, 2000);
+      }, 50);
 
       setIsLoading(false);
     } catch (error) {
