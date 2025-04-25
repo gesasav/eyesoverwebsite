@@ -34,6 +34,13 @@ const DownloadPage = () => {
     <img class="intro-image-download" src="/images/ebook-cover.jpg" alt="Zeynep" />
     </div>
     <div className="info-block">
+    <div className="form-wrapper">
+    {isLoading ? (
+    <div className="loading-overlay">
+      <div className="spinner"></div>
+      <p>Sending...</p>
+    </div>
+  ) : (
     <form className="model-form" id="model-form" onSubmit={(e) => e.preventDefault()}>
 
   <div className="guide-header">
@@ -113,15 +120,8 @@ const DownloadPage = () => {
 </button>
 
 
-</form>
-
-       {/* Loading Spinner */}
-       {isLoading && (
-        <div className="loading-spinner">
-          <div className="spinner"></div>
-          <p>Sending...</p>
-        </div>
-      )}
+    </form> )}
+    </div>
 </div>
   </div>
 </div>
