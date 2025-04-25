@@ -93,12 +93,8 @@ const DownloadPage = () => {
       );
 
       // ✅ Trigger file download
-      const link = document.createElement("a");
-      link.href = "https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf";
-      link.download = "WispyEbook.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
+
 
       // ✅ Show thank-you popup
       alert("Thank you! Your eBook download has started.");
