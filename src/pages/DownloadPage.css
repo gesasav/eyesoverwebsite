@@ -38,6 +38,30 @@
     animation: spin 1s linear infinite;
     margin-bottom: 1rem;
   }
+
+  .cta-button-download {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #ccc; /* inactive (disabled) color */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease, cursor 0.3s ease;
+  }
+  
+  /* When the button is enabled (NOT disabled) */
+  .cta-button-download:enabled {
+    background-color: #1d2a1d; /* active (enabled) color */
+    cursor: pointer;
+  }
+  
+  /* Optional: Hover effect when enabled */
+  .cta-button-download:enabled:hover {
+    background-color: #213121; /* a slightly lighter shade on hover */
+  }
   
   @keyframes spin {
     to {
@@ -59,6 +83,13 @@
     color: #333;
     margin: 0.2rem 0;
     font-weight: 500;
+  }
+  
+  .required-indicator {
+    color: red;
+    margin-left: 4px;
+    font-weight: bold;
+    font-size: 1rem;
   }
   
   .guide-header h1 {

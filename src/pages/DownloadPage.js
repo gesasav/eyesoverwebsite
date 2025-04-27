@@ -6,6 +6,8 @@ import './DownloadPage.css'
 
 const DownloadPage = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [email, setEmail] = useState("");
+const [fullName, setFullName] = useState("");
 
   return (
     <><div className="model-container">
@@ -52,70 +54,70 @@ const DownloadPage = () => {
   <p>Whether you're new to lashing or want to refine your technique, this guide will help you layer with confidence and intention.</p>
   <strong>Download your free copy now and start transforming your lash sets today.</strong>
 
-  <label>Full Name:</label>
-  <input type="text" name="fullName" required id="fullName" />
+  <label>Full Name: <span className="required-indicator">*</span> </label>
+  <input type="text" name="fullName" required id="fullName" value={fullName}
+  onChange={(e) => setFullName(e.target.value)}/>
   <label>Phone Number:</label>
   <input type="tel" name="phone" required id="phone" />
-  <label>Email Address:</label>
-  <input type="email" name="email" required id="email" />
+  <label>Email Address: <span className="required-indicator">*</span></label>
+  <input type="email" name="email" required id="email"  value={email}
+  onChange={(e) => setEmail(e.target.value)}/>
 
   <button
   type="button"
-  className="cta-button"
-  disabled={!email.trim() || !fullName.trim()}
-  onClick={async (e) => {
+  className="cta-button-download"
+  disabled={!email.trim() || !fullName.trim()} 
+  onClick={(e) => {
     e.preventDefault();
+    
+    const emailInput = document.getElementById("email").value.trim();
+    const fullNameInput = document.getElementById("fullName").value.trim();
     const form = document.getElementById("model-form");
-    const email = document.getElementById("email").value.trim();
-    const name = document.getElementById("fullName").value.trim();
 
-    if (!email && !name) {
+    if (!emailInput || !fullNameInput) {
       alert("Please fill in your name and email before downloading.");
       return;
     }
-    if (!email) {
-      alert("Please fill in your email before downloading.");
-      return;
-    }
-    if (!name) {
-      alert("Please fill in your name before downloading.");
-      return;
-    }
+    if (!emailInput ) {
+        alert("Please fill in your email before downloading.");
+        return;
+      }
 
+      if (!fullNameInput) {
+        alert("Please fill in your name before downloading.");
+        return;
+      }
+
+
+    // ✅ Immediately open PDF (MOBILE SAFE)
+    window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
+
+    // ✅ Then after that, start async work
     setIsLoading(true);
 
-          // ✅ Trigger file download
-          window.open("https://eyesoveraesthetics.co.uk/Ebooks/WispyE-book.pdf", "_blank");
-
-    try {
-      // ✅ Send form data silently via EmailJS
-      await emailjs.sendForm(
-        "service_8bk6yra",         // your EmailJS service ID
-        "template_7luj9v8",        // your EmailJS template ID
-        form,                      // HTML form element
-        "1l53LXLP3GtXelnpL"        // your EmailJS user/public key
-      );
-
-
-
-      // ✅ Show thank-you popup
+    emailjs.sendForm(
+      "service_8bk6yra",
+      "template_7luj9v8",
+      form,
+      "1l53LXLP3GtXelnpL"
+    )
+    .then(() => {
+      setIsLoading(false);
       alert("Thank you! Your eBook download has started.");
-
-      // ✅ Redirect after 2 seconds
       setTimeout(() => {
         window.location.href = "/";
-      }, 50);
-
+      }, 20);
+    })
+    .catch((error) => {
       setIsLoading(false);
-    } catch (error) {
       console.error("EmailJS submission failed:", error);
       alert("Something went wrong. Please try again.");
-      setIsLoading(false);
-    }
+    });
   }}
 >
   Download E-Book
 </button>
+
 
 
     </form> )}
